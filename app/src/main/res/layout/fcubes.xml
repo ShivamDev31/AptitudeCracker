@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center"
+                android:text="@string/table_of_cubes"
+                android:textSize="@dimen/textSize" />
+
+            <TableLayout
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="@string/number"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="@string/cube"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="8"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="27"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="64"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="125"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="6"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="216"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="7"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="343"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="8"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="512"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="9"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/LightGrey"
+                        android:gravity="center_horizontal"
+                        android:text="729"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="f_main">
+        <item>Squares, Cubes and Fractions</item>
+        <item>Divisibility Rule</item>
+        <item>Exponents Rule</item>
+        <item>Logarithms</item>
+        <item>Progressions</item>
+        <item>Quadratic Equations</item>
+        <item>Probability, P and C</item>
+        <item>Geometry</item>
+        <item>Co-ordinate Geometry</item>
+        <item>Trigonometry</item>
+    </string-array>
+    <string-array name="f_squares">
+        <item>Squares</item>
+        <item>Cubes</item>
+        <item>Decimal, Percent and Fractions</item>
+    </string-array>
+    <string-array name="f_probability">
+        <item>Probability</item>
+        <item>Binomial Theorem</item>
+        <item>Counting Methods</item>
+    </string-array>
+    <string-array name="f_geometry">
+        <item>Geometry Fundamentals</item>
+        <item>Areas and Perimeters</item>
+        <item>Volumes and Surface Areas</item>
+        <item>Circle Properties</item>
+        <item>Triangle Properties</item>
+        <item>Quadrilateral Properties</item>
+        <item>Pentagon Properties</item>
+    </string-array>
+    <string-array name="f_geo_fund">
+        <item>Geometry Fundamentals I</item>
+        <item>Geometry Fundamentals II</item>
+        <item>Geometry Fundamentals III</item>
+        <item>Geometry Fundamentals IV</item>
+        <item>Geometry Fundamentals V</item>
+    </string-array>
+    <string-array name="f_areas_peri">
+        <item>Circle</item>
+        <item>Triangle</item>
+        <item>Equilateral Triangle</item>
+        <item>Square</item>
+        <item>Rectangle</item>
+        <item>Parallelogram</item>
+        <item>Ring</item>
+        <item>Sector</item>
+        <item>Trapezoid</item>
+    </string-array>
+    <string-array name="f_vol_surface">
+        <item>Cone</item>
+        <item>Cube</item>
+        <item>Cylinder</item>
+        <item>Frustrum</item>
+        <item>Pyramid</item>
+        <item>Sphere</item>
+    </string-array>
+    <string-array name="f_circle_prop">
+        <item>Circle Property I</item>
+        <item>Circle Property II</item>
+        <item>Circle Property III</item>
+        <item>Circle Property IV</item>
+        <item>Circle Property V</item>
+    </string-array>
+    <string-array name="f_tri_prop">
+        <item>Triangle Property I</item>
+        <item>Triangle Property II</item>
+        <item>Triangle Property III</item>
+        <item>Triangle Property IV</item>
+        <item>Triangle Property V</item>
+        <item>Triangle Property VI</item>
+        <item>Triangle Property VII</item>
+        <item>Triangle Property VIII</item>
+        <item>Triangle Property IX</item>
+    </string-array>
+    <string-array name="f_co_geo">
+        <item>Line Equation</item>
+        <item>Line Distance</item>
+        <item>Line Midpoint</item>
+        <item>Line Slope</item>
+        <item>Slope Parallel Lines</item>
+        <item>Slope Perpendicular Lines</item>
+        <item>Circle Equation</item>
+    </string-array>
+    <string-array name="f_trigonometry">
+        <item>Trigonometry Basics</item>
+        <item>Trigonometry Common Angles</item>
+        <item>Trigonometry Periodic Formulas</item>
+        <item>Trigonometry Pythagorean</item>
+        <item>Half Angle Formulas, etc</item>
+    </string-array>
+    <string-array name="grid_texts">
+        <item>Aptitude\nCalculator</item>
+        <item>Test Your\nSkills</item>
+        <item>Tips and\nTricks</item>
+        <item>Important\nFormulas</item>
+    </string-array>
+
+</resources>

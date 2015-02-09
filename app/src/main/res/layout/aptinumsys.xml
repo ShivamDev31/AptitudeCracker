@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_apti_number1"
+            style="@style/ETStyle"
+            android:hint="@string/num1hint"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_apti_number2"
+            style="@style/ETStyle"
+            android:hint="@string/num2hint"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_apti_output"
+            style="@style/TVStyle"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:textIsSelectable="true" />
+
+        <Button
+            android:id="@+id/b_apti_add"
+            style="@style/ButtonStyle"
+            android:padding="10dp"
+            android:layout_marginTop="15.0dip"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/b_apti_sub"
+            style="@style/ButtonStyle"
+            android:padding="10dp"
+            
+            android:text="@string/subtract" />
+
+        <Button
+            android:id="@+id/b_apti_mul"
+            style="@style/ButtonStyle"
+            android:padding="10dp"
+            android:text="@string/multiply" />
+
+        <Button
+            android:id="@+id/b_apti_div"
+            style="@style/ButtonStyle"
+            android:padding="10dp"
+            android:text="@string/divide" />
+
+        <Button
+            android:id="@+id/b_apti_mod"
+            style="@style/ButtonStyle"
+            android:padding="10dp"
+            android:text="@string/mod" />
+
+        <Button
+            android:id="@+id/bClear"
+            android:padding="10dp"
+            style="@style/ButtonRed"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</ScrollView>

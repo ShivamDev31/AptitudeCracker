@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <RadioGroup
+            android:id="@+id/rg_apti_Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_apti_twoperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/twopersons" />
+
+            <RadioButton
+                android:id="@+id/rb_apti_threeperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/threepersons" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_apti_firstperson"
+            style="@style/ETStyle"
+            android:hint="@string/timefirstperson"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_apti_secondperson"
+            style="@style/ETStyle"
+            android:hint="@string/timesecondperson"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_apti_thirdperson"
+            style="@style/ETStyle"
+            android:hint="@string/timethirdperson"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_apti_result"
+            style="@style/TVStyle"
+            android:gravity="center"
+            android:textIsSelectable="true" />
+
+        <Button
+            android:id="@+id/b_apti_calcWD"
+            style="@style/ButtonStyle"
+            android:padding="10dp"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/aptitimenwork" />
+
+        <Button
+            android:id="@+id/bClear"
+            style="@style/ButtonRed"
+            android:layout_marginTop="10.0dip"
+            android:padding="10dp"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</ScrollView>

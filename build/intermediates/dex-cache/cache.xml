@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="A:\Software\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-f5f5e63a1cd076f070aa416b39b1d3841767fcb5.jar" />
+    </item>
+    <item
+        jar="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-166688ff986ea656476f6b78824c726fdbad4d0e.jar" />
+    </item>
+    <item
+        jar="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\classes-549448745a96eeb35e2be6d9fe7c836c95c485f4.jar" />
+    </item>
+    <item
+        jar="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\classes-9cf0a53edd20ad12bb519fa0f0d19be55f85388d.jar" />
+    </item>
+    <item
+        jar="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\classes-bcffc20e6ae2252df06334bea443ba9b779a596b.jar" />
+    </item>
+
+</items>

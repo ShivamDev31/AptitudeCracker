@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/likeButton"
+        android:icon="@drawable/ic_like"
+        android:orderInCategory="100"
+        android:title="Like"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/reportBug"
+        android:orderInCategory="200"
+        android:title="Report a Bug!"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/feedback"
+        android:orderInCategory="300"
+        android:title="Feedback"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/facebook"
+        android:orderInCategory="400"
+        android:title="Like Us!"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="500"
+        android:title="About Us!"
+        app:showAsAction="never" />
+
+</menu>

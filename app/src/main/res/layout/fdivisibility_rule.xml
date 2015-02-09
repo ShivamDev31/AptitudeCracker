@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10.0dip"
+            android:text="@string/percentages_fractions_and_decimal"
+            android:textSize="@dimen/textSize" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:background="@android:color/black" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="@string/number"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="@string/rule"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="If last digit is 0,2,4,6, or 8"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="3"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="If sum of digits is divisible by 3"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="4"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="The last 2 digits is divisible by 4"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="If last digit is 0 or 5"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="If last digit is 0 or 5"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="6"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="If divisible by 2 and 3"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:text="@string/divisibility_eg"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:background="@android:color/black" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="@string/number"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="@string/rule"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="8"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="The last 3 digits is divisible by 4"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="9"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="If sum of digits is divisible by 9"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.5"
+                    android:background="#ffcccccc"
+                    android:gravity="center_horizontal"
+                    android:text="10"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:text="If last digit is 0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <EditText
+        android:id="@+id/et_apti_number"
+        style="@style/ETStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="@string/enter_number"
+        android:inputType="number"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_apti_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="28.0sp" />
+
+    <Button
+        android:id="@+id/b_fact_calc"
+        style="@style/ButtonStyle"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/calc"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/bClear"
+        style="@style/ButtonRed"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/clear"
+        android:textSize="25dp" />
+
+</LinearLayout>

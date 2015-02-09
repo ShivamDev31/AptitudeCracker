@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dp">
+
+
+    <Button
+        android:id="@+id/b_apti_numsys"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="10.0dip"
+        android:padding="8dp"
+        android:text="@string/numsys" />
+
+    <Button
+        android:id="@+id/b_apti_percent"
+        style="@style/ButtonStyle"
+        android:padding="8dp"
+        android:text="@string/percent" />
+
+    <Button
+        android:id="@+id/b_apti_timenwork"
+        style="@style/ButtonStyle"
+        android:padding="8dp"
+        android:text="@string/timenwork" />
+
+    <Button
+        android:id="@+id/b_apti_timendist"
+        style="@style/ButtonStyle"
+        android:padding="8dp"
+        android:text="@string/timendist" />
+
+    <Button
+        android:id="@+id/b_apti_interest"
+        style="@style/ButtonStyle"
+        android:padding="8dp"
+        android:text="@string/aptiInterest" />
+
+    <Button
+        android:id="@+id/b_apti_blcmhcf"
+        style="@style/ButtonStyle"
+        android:padding="8dp"
+        android:text="@string/BLcmHcf" />
+
+    <Button
+        android:id="@+id/b_apti_geometry"
+        style="@style/ButtonStyle"
+        android:padding="8dp"
+        android:text="@string/apti_geometry" />
+
+    <Button
+        android:id="@+id/b_apti_factorial"
+        style="@style/ButtonStyle"
+        android:padding="8dp"
+        android:text="@string/factorial" />
+</ScrollView>

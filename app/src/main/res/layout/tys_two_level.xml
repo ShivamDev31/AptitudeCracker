@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/b_tys_Addition"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:padding="10.0dip"
+                android:text="Addition" />
+
+            <Button
+                android:id="@+id/b_tys_Subtraction"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:padding="10.0dip"
+                android:text="Subtraction" />
+
+            <Button
+                android:id="@+id/b_tys_Multiplication"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:padding="10.0dip"
+                android:text="Multiplication" />
+
+            <Button
+                android:id="@+id/b_tys_Division"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:padding="10.0dip"
+                android:text="Division" />
+
+            <Button
+                android:id="@+id/b_tys_All"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:padding="10.0dip"
+                android:text="All Of The Above" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

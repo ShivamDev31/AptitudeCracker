@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <Button
+        android:id="@+id/b_more_Rate"
+        style="@style/ButtonStyle"
+        android:layout_width="fill_parent"
+        android:padding="5.0dip"
+        android:text="@string/rate_this_app" />
+
+    <Button
+        android:id="@+id/b_more_About"
+        style="@style/ButtonStyle"
+        android:layout_width="fill_parent"
+        android:padding="5.0dip"
+        android:text="@string/about_this_app" />
+
+    <Button
+        android:id="@+id/b_more_Report"
+        style="@style/ButtonStyle"
+        android:layout_width="fill_parent"
+        android:padding="5.0dip"
+        android:text="@string/report_a_bug" />
+
+    <Button
+        android:id="@+id/b_more_Suggestions"
+        style="@style/ButtonStyle"
+        android:layout_width="fill_parent"
+        android:padding="5.0dip"
+        android:text="@string/give_suggestions" />
+
+    <Button
+        android:id="@+id/b_more_LikeUs"
+        style="@style/ButtonStyle"
+        android:layout_width="fill_parent"
+        android:padding="5.0dip"
+        android:text="@string/like_us_on_facebook" />
+
+    <TextView
+        android:id="@+id/tv_more_Version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/version"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <EditText
+            android:id="@+id/et_more_Name"
+            style="@style/ETStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_name"
+            android:inputType="textPersonName"
+            android:padding="10.0dip"
+            android:textSize="22.0sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_more_Subject"
+            style="@style/ETStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subject"
+            android:padding="10.0dip"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@+id/et_more_Location"
+            style="@style/ETStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/location"
+            android:padding="10.0dip" />
+
+        <EditText
+            android:id="@+id/et_more_Body"
+            style="@style/ETStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_reviews_and_suggestions"
+            android:inputType="textPostalAddress"
+            android:maxLines="20"
+            android:padding="10.0dip" />
+
+        <Button
+            android:id="@+id/b_more_SendMail"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15.0dip"
+            android:padding="10.0dip"
+            android:text="@string/send_mail" />
+    </LinearLayout>
+
+</ScrollView>

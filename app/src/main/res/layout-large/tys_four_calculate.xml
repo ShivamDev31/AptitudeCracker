@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/tv_tys_Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Timer"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="#db5e3c"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_tys_Main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <TextView
+            android:id="@+id/tv_tys_Questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Questions"
+            android:gravity="center"
+            android:textColor="#53b0e5"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_tys_NumberOfQuestions"
+            android:layout_width="wrap_content"
+            android:text="01/02/03"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tys_Answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_tys_Main"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="7dp"
+        android:text="13/21/24"
+        android:textColor="#a5d22c"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tys_Answers" >
+
+        <LinearLayout
+            android:id="@+id/calcLayout"
+            style="@style/ButtonWhite"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="1"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="2"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="3"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="4"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="5"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="6"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="7"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bEight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="8"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bNine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_weight="1"
+                    android:background="@color/Transparent"
+                    android:text="9"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonZero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bZero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/Transparent"
+                    android:text="0"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bClear"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calcLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="Clear"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

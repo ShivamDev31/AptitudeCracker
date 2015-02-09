@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BgAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <EditText
+            android:id="@+id/et_apti_PercentValue"
+            style="@style/ETStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20.0dip"
+            android:hint="@string/percentValue"
+            android:inputType="number"
+            android:textSize="22.0sp" />
+
+        <EditText
+            android:id="@+id/et_apti_Percent"
+            style="@style/ETStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:hint="@string/enterPercent"
+            android:inputType="number"
+            android:textSize="22.0sp" />
+
+        <TextView
+            android:id="@+id/tv_apti_PercentValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:textSize="22.0sp" />
+
+        <Button
+            android:id="@+id/b_apti_calcPercentValue"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="15.0dip"
+            android:padding="10dp"
+            android:text="@string/calc" />
+
+        <Button
+            android:id="@+id/bClear"
+            style="@style/ButtonRed"
+            android:layout_marginTop="10.0dip"
+            android:padding="10dp"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</ScrollView>

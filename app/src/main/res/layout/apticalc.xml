@@ -3,55 +3,51 @@
     style="@style/BgAll"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="15dp">
+    android:padding="10.0dip">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/b_apti_numsys"
-        style="@style/ButtonStyle"
-        android:layout_marginTop="10.0dip"
-        android:padding="8dp"
-        android:text="@string/numsys" />
+        <Button
+            android:id="@+id/b_apti_numsys"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/numsys" />
 
-    <Button
-        android:id="@+id/b_apti_percent"
-        style="@style/ButtonStyle"
-        android:padding="8dp"
-        android:text="@string/percent" />
+        <Button
+            android:id="@+id/b_apti_percent"
+            style="@style/ButtonStyle"
+            android:text="@string/percent" />
 
-    <Button
-        android:id="@+id/b_apti_timenwork"
-        style="@style/ButtonStyle"
-        android:padding="8dp"
-        android:text="@string/timenwork" />
+        <Button
+            android:id="@+id/b_apti_timenwork"
+            style="@style/ButtonStyle"
+            android:text="@string/timenwork" />
 
-    <Button
-        android:id="@+id/b_apti_timendist"
-        style="@style/ButtonStyle"
-        android:padding="8dp"
-        android:text="@string/timendist" />
+        <Button
+            android:id="@+id/b_apti_timendist"
+            style="@style/ButtonStyle"
+            android:text="@string/timendist" />
 
-    <Button
-        android:id="@+id/b_apti_interest"
-        style="@style/ButtonStyle"
-        android:padding="8dp"
-        android:text="@string/aptiInterest" />
+        <Button
+            android:id="@+id/b_apti_interest"
+            style="@style/ButtonStyle"
+            android:text="@string/aptiInterest" />
 
-    <Button
-        android:id="@+id/b_apti_blcmhcf"
-        style="@style/ButtonStyle"
-        android:padding="8dp"
-        android:text="@string/BLcmHcf" />
+        <Button
+            android:id="@+id/b_apti_blcmhcf"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:text="@string/BLcmHcf" />
 
-    <Button
-        android:id="@+id/b_apti_geometry"
-        style="@style/ButtonStyle"
-        android:padding="8dp"
-        android:text="@string/apti_geometry" />
+        <Button
+            android:id="@+id/b_apti_factorial"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:text="@string/factorial" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/b_apti_factorial"
-        style="@style/ButtonStyle"
-        android:padding="8dp"
-        android:text="@string/factorial" />
 </ScrollView>

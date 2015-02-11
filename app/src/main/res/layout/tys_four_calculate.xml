@@ -14,7 +14,6 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:text="Timer"
         android:textColor="#db5e3c"
         android:textSize="15sp" />
 
@@ -33,7 +32,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Questions"
             android:textColor="#53b0e5"
             android:textSize="22sp" />
 
@@ -43,7 +41,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="01/02/03"
             android:textSize="22sp" />
     </LinearLayout>
 
@@ -54,7 +51,6 @@
         android:layout_below="@+id/ll_tys_Main"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="15dp"
-        android:text="13/21/24"
         android:textColor="#a5d22c"
         android:textSize="22sp" />
 

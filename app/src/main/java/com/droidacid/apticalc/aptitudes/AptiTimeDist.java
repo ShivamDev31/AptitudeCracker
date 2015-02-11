@@ -1,5 +1,7 @@
 package com.droidacid.apticalc.aptitudes;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,108 +15,121 @@ import com.droidacid.apticalc.MyActionBar;
 import com.droidacid.apticalc.R;
 
 public class AptiTimeDist extends MyActionBar implements OnClickListener,
-		OnCheckedChangeListener {
+        OnCheckedChangeListener {
 
-	Button bCalc, bClear;
-	EditText etTime, etDistance, etSpeed;
-	TextView tvResult;
-	RadioGroup rgTimeDist;
-	String tag = "Time Speed Distance";
+    Button bCalc, bClear;
+    EditText etTime, etDistance, etSpeed;
+    TextView tvResult;
+    RadioGroup rgTimeDist;
+    String tag = "Time Speed Distance";
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.aptitimedist);
-		actionBar();
-		initialize();
-	}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.aptitimedist);
+        actionBar();
+        initialize();
+    }
 
-	private void initialize() {
-		bCalc = (Button) findViewById(R.id.b_apti_CalcTDS);
-		etTime = (EditText) findViewById(R.id.et_apti_Time);
-		etSpeed = (EditText) findViewById(R.id.et_apti_Speed);
-		etDistance = (EditText) findViewById(R.id.et_apti_distance);
-		tvResult = (TextView) findViewById(R.id.tv_apti_Result);
-		rgTimeDist = (RadioGroup) findViewById(R.id.rg_apti_TimeDist);
-		rgTimeDist.setOnCheckedChangeListener(this);
-		bClear = (Button) findViewById(R.id.bClear);
-		bClear.setOnClickListener(this);
-		bCalc.setOnClickListener(this);
+    private void initialize() {
+        bCalc = (Button) findViewById(R.id.b_apti_CalcTDS);
+        etTime = (EditText) findViewById(R.id.et_apti_Time);
+        etSpeed = (EditText) findViewById(R.id.et_apti_Speed);
+        etDistance = (EditText) findViewById(R.id.et_apti_distance);
+        tvResult = (TextView) findViewById(R.id.tv_apti_Result);
+        rgTimeDist = (RadioGroup) findViewById(R.id.rg_apti_TimeDist);
+        rgTimeDist.setOnCheckedChangeListener(this);
+        bClear = (Button) findViewById(R.id.bClear);
+        bClear.setOnClickListener(this);
+        bCalc.setOnClickListener(this);
 
-	}
+    }
 
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.b_apti_CalcTDS:
-			int selectedRB = rgTimeDist.getCheckedRadioButtonId();
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.b_apti_CalcTDS:
+                int selectedRB = rgTimeDist.getCheckedRadioButtonId();
+                try {
 
-			if (etTime.getText().toString().equals(""))
-				etTime.setText("0");
-			tvResult.setText("");
-			if (etSpeed.getText().toString().equals(""))
-				etSpeed.setText("0");
-			tvResult.setText("");
-			if (etDistance.getText().toString().equals(""))
-				etDistance.setText("0");
-			tvResult.setText("");
+                    Double time = Double.parseDouble(etTime.getText().toString());
+                    Double speed = Double.parseDouble(etSpeed.getText().toString());
+                    Double dist = Double.parseDouble(etDistance.getText().toString());
 
-			Double Time = Double.parseDouble(etTime.getText().toString());
-			Double Speed = Double.parseDouble(etSpeed.getText().toString());
-			Double Dist = Double.parseDouble(etDistance.getText().toString());
 
-			switch (selectedRB) {
-			case R.id.rb_apti_Time:
-				tvResult.setText("Time taken = "
-						+ Double.toString(Dist / Speed) + " hrs");
+                    switch (selectedRB) {
+                        case R.id.rb_apti_Time:
+                            tvResult.setText("time taken = "
+                                    + Double.toString(dist / speed) + " hrs");
 
-				break;
+                            break;
 
-			case R.id.rb_apti_Speed:
-				tvResult.setText("Speed = " + Double.toString(Dist / Time)
-						+ " km/hr");
+                        case R.id.rb_apti_Speed:
+                            tvResult.setText("Speed = " + Double.toString(dist / time)
+                                    + " km/hr");
 
-				break;
+                            break;
 
-			case R.id.rb_apti_Distance:
-				tvResult.setText("Distance = " + Double.toString(Speed * Time)
-						+ " km");
+                        case R.id.rb_apti_Distance:
+                            tvResult.setText("Distance = " + Double.toString(speed * time)
+                                    + " km");
 
-				break;
-			}
-			break;
-		case R.id.bClear:
-			etTime.setText("");
-			etSpeed.setText("");
-			etDistance.setText("");
-			tvResult.setText("");
-			break;
-		}
-	}
+                            break;
+                    }
+                    break;
 
-	@Override
-	public void onCheckedChanged(RadioGroup RgTimeDist, int TimeDist) {
+                } catch (NumberFormatException e) {
+                    // A Dialog Box here to display to enter an input
+                    tvResult.setText("");
+                    AlertDialog.Builder d = new AlertDialog.Builder(this);
+                    d.setTitle("No value entered");
+                    d.setMessage("Fields cannot be left blank");
+                    d.setNegativeButton("Ok",
+                            new DialogInterface.OnClickListener() {
 
-		switch (TimeDist) {
+                                @Override
+                                public void onClick(DialogInterface dialog,
+                                                    int which) {
+                                    dialog.cancel();
+                                }
+                            });
 
-		case R.id.rb_apti_Time:
-			etTime.setVisibility(View.GONE);
-			etSpeed.setVisibility(View.VISIBLE);
-			etDistance.setVisibility(View.VISIBLE);
+                    d.show();
+                }
 
-			break;
-		case R.id.rb_apti_Speed:
-			etSpeed.setVisibility(View.GONE);
-			etTime.setVisibility(View.VISIBLE);
-			etDistance.setVisibility(View.VISIBLE);
 
-			break;
-		case R.id.rb_apti_Distance:
-			etDistance.setVisibility(View.GONE);
-			etSpeed.setVisibility(View.VISIBLE);
-			etTime.setVisibility(View.VISIBLE);
+            case R.id.bClear:
+                etTime.setText("");
+                etSpeed.setText("");
+                etDistance.setText("");
+                tvResult.setText("");
+                break;
+        }
+    }
 
-			break;
-		}
-	}
+    @Override
+    public void onCheckedChanged(RadioGroup RgTimeDist, int TimeDist) {
+
+        switch (TimeDist) {
+
+            case R.id.rb_apti_Time:
+                etTime.setVisibility(View.GONE);
+                etSpeed.setVisibility(View.VISIBLE);
+                etDistance.setVisibility(View.VISIBLE);
+
+                break;
+            case R.id.rb_apti_Speed:
+                etSpeed.setVisibility(View.GONE);
+                etTime.setVisibility(View.VISIBLE);
+                etDistance.setVisibility(View.VISIBLE);
+
+                break;
+            case R.id.rb_apti_Distance:
+                etDistance.setVisibility(View.GONE);
+                etSpeed.setVisibility(View.VISIBLE);
+                etTime.setVisibility(View.VISIBLE);
+
+                break;
+        }
+    }
 }

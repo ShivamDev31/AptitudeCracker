@@ -3,7 +3,7 @@
     style="@style/BgAll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp" >
+    android:padding="15dp">
 
     <TextView
         android:id="@+id/tv_tys_Timer"
@@ -11,9 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="Timer"
-        android:layout_marginTop="18dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
         android:gravity="center"
         android:textColor="#db5e3c"
         android:textSize="19sp" />
@@ -25,14 +24,13 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="58dp"
         android:orientation="horizontal"
-        android:padding="1dp" >
+        android:padding="1dp">
 
-        <TextView
+    <TextView
             android:id="@+id/tv_tys_Questions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="Questions"
             android:gravity="center"
             android:textColor="#53b0e5"
             android:textSize="25sp" />
@@ -40,7 +38,6 @@
         <TextView
             android:id="@+id/tv_tys_NumberOfQuestions"
             android:layout_width="wrap_content"
-            android:text="01/02/03"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
@@ -52,31 +49,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ll_tys_Main"
-        android:layout_marginTop="23dp"
         android:layout_marginLeft="7dp"
-        android:text="13/21/24"
+        android:layout_marginTop="23dp"
         android:textColor="#a5d22c"
         android:textSize="25sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_tys_Answers" >
+        android:layout_below="@+id/tv_tys_Answers">
 
         <LinearLayout
             android:id="@+id/calcLayout"
             style="@style/ButtonWhite"
             android:layout_marginTop="30dp"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
-                <Button
+            <Button
                     android:id="@+id/bOne"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -111,9 +107,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:gravity="center"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
-                <Button
+            <Button
                     android:id="@+id/bFour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -148,9 +144,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:gravity="center"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
-                <Button
+            <Button
                     android:id="@+id/bSeven"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -186,9 +182,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
-                <Button
+            <Button
                     android:id="@+id/bZero"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

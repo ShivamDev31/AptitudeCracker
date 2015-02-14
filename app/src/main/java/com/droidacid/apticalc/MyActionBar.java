@@ -8,12 +8,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.ViewConfiguration;
 
 import com.droidacid.apticalc.more.AboutUs;
 import com.droidacid.apticalc.more.Report;
-
-import java.lang.reflect.Field;
 
 public class MyActionBar extends ActionBarActivity {
 
@@ -29,7 +26,7 @@ public class MyActionBar extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         actionBar = getSupportActionBar();
 
-        try {
+        /*try {
             ViewConfiguration config = ViewConfiguration.get(this);
             Field menuKeyField = ViewConfiguration.class
                     .getDeclaredField("sHasPermanentMenuKey");
@@ -40,7 +37,7 @@ public class MyActionBar extends ActionBarActivity {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     public void showActionBar() {

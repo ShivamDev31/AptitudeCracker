@@ -22,6 +22,7 @@ public class AptiTimeDist extends MyActionBar implements OnClickListener,
     TextView tvResult;
     RadioGroup rgTimeDist;
     String tag = "Time Speed Distance";
+    Double time, speed, dist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,6 @@ public class AptiTimeDist extends MyActionBar implements OnClickListener,
         bClear = (Button) findViewById(R.id.bClear);
         bClear.setOnClickListener(this);
         bCalc.setOnClickListener(this);
-
     }
 
     @Override
@@ -50,61 +50,70 @@ public class AptiTimeDist extends MyActionBar implements OnClickListener,
         switch (v.getId()) {
             case R.id.b_apti_CalcTDS:
                 int selectedRB = rgTimeDist.getCheckedRadioButtonId();
-                try {
 
-                    Double time = Double.parseDouble(etTime.getText().toString());
-                    Double speed = Double.parseDouble(etSpeed.getText().toString());
-                    Double dist = Double.parseDouble(etDistance.getText().toString());
+                switch (selectedRB) {
+                    case R.id.rb_apti_Time:
+                        try {
+                            speed = Double.parseDouble(etSpeed.getText().toString());
+                            dist = Double.parseDouble(etDistance.getText().toString());
+                            tvResult.setText("Time taken = " + Double.toString(dist / speed) + " hrs");
+                        } catch (NumberFormatException e) {
+                            showDialog();
+                        }
+                        break;
 
+                    case R.id.rb_apti_Speed:
+                        try {
+                            time = Double.parseDouble(etTime.getText().toString());
+                            dist = Double.parseDouble(etDistance.getText().toString());
+                            tvResult.setText("Speed = " + Double.toString(dist / time) + " km/hr");
 
-                    switch (selectedRB) {
-                        case R.id.rb_apti_Time:
-                            tvResult.setText("time taken = "
-                                    + Double.toString(dist / speed) + " hrs");
+                        } catch (NumberFormatException e) {
+                            showDialog();
+                        }
+                        break;
 
-                            break;
-
-                        case R.id.rb_apti_Speed:
-                            tvResult.setText("Speed = " + Double.toString(dist / time)
-                                    + " km/hr");
-
-                            break;
-
-                        case R.id.rb_apti_Distance:
-                            tvResult.setText("Distance = " + Double.toString(speed * time)
-                                    + " km");
-
-                            break;
-                    }
-                    break;
-
-                } catch (NumberFormatException e) {
-                    // A Dialog Box here to display to enter an input
-                    tvResult.setText("");
-                    AlertDialog.Builder d = new AlertDialog.Builder(this);
-                    d.setTitle("No value entered");
-                    d.setMessage("Fields cannot be left blank");
-                    d.setNegativeButton("Ok",
-                            new DialogInterface.OnClickListener() {
-
-                                @Override
-                                public void onClick(DialogInterface dialog,
-                                                    int which) {
-                                    dialog.cancel();
-                                }
-                            });
-
-                    d.show();
+                    case R.id.rb_apti_Distance:
+                        try {
+                            time = Double.parseDouble(etTime.getText().toString());
+                            speed = Double.parseDouble(etSpeed.getText().toString());
+                            tvResult.setText("Distance = " + Double.toString(speed * time) + " km");
+                        } catch (NumberFormatException e) {
+                            showDialog();
+                        }
+                        break;
                 }
-
+                break;
 
             case R.id.bClear:
-                etTime.setText("");
                 etSpeed.setText("");
+                etTime.setText("");
                 etDistance.setText("");
                 tvResult.setText("");
                 break;
         }
+
+    }
+
+    private void showDialog() {
+
+        // A Dialog Box here to display to enter an input
+        tvResult.setText("");
+        AlertDialog.Builder d = new AlertDialog.Builder(this);
+        d.setTitle("No value entered");
+        d.setMessage("Fields cannot be left blank");
+        d.setNegativeButton("Ok",
+                new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                        dialog.cancel();
+                    }
+                });
+
+        d.show();
+
     }
 
     @Override
@@ -116,19 +125,25 @@ public class AptiTimeDist extends MyActionBar implements OnClickListener,
                 etTime.setVisibility(View.GONE);
                 etSpeed.setVisibility(View.VISIBLE);
                 etDistance.setVisibility(View.VISIBLE);
-
+                etSpeed.setText("");
+                etDistance.setText("");
+                tvResult.setText("");
                 break;
             case R.id.rb_apti_Speed:
                 etSpeed.setVisibility(View.GONE);
                 etTime.setVisibility(View.VISIBLE);
                 etDistance.setVisibility(View.VISIBLE);
-
+                etTime.setText("");
+                etDistance.setText("");
+                tvResult.setText("");
                 break;
             case R.id.rb_apti_Distance:
                 etDistance.setVisibility(View.GONE);
                 etSpeed.setVisibility(View.VISIBLE);
                 etTime.setVisibility(View.VISIBLE);
-
+                etSpeed.setText("");
+                etTime.setText("");
+                tvResult.setText("");
                 break;
         }
     }

@@ -213,4 +213,10 @@
     <color name="transparent_white_percent_85">#d9ffffff</color>
     <color name="transparent_white_percent_90">#e6ffffff</color>
     <color name="transparent_white_percent_95">#f2ffffff</color>
+
+
+    <!-- ActionBar colors -->
+    <color name="primaryColor">#1976D2</color>
+    <color name="primaryColorDark">#BBDEFB</color>
+    <color name="accentColor">#82B1FF</color>
 </resources>

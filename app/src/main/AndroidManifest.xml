@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.droidacid.apticalc"
-    android:installLocation="preferExternal"
-    android:versionCode="5"
-    android:versionName="1.02">
+    package="com.droidacid.apticalc">
 
-    <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="21" />
-
-    <supports-screens
-
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:smallScreens="true" />
 
     <!-- Internet Permissions
         <uses-permission android:name="android.permission.INTERNET" />
@@ -44,118 +32,91 @@
         </activity>
         <activity
             android:name="com.droidacid.apticalc.MainMenu"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiCalc"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.tys.OneDifficulty"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.tipsandtricks.TipsAndTricks"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.droidacid.apticalc.tipsandtricks.TipsAndTricksShowTextView"
-            android:configChanges="orientation|screenSize"
+            android:name="com.droidacid.apticalc.tipsandtricks.TipsAndTricksDetailedView"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.Formulas"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
 
         <!-- Test yourself -->
         <activity
             android:name="com.droidacid.apticalc.tys.TwoLevel"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.tys.ThreeCounter"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.tys.FourCalculation"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.tys.TYSScores"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.tys.HighScores"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
 
         <!-- Aptitude Intents -->
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiNumSys"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiPercent"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiPerValue"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiTimeNWork"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiTimeDist"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiInterest"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiLcmHcf"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.aptitudes.AptiFactorial"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
 
 
         <!-- Formulas Intents Code -->
         <activity
             android:name="com.droidacid.apticalc.formulas.MainImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.SquaresCubesFractionsList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.SquaresCubesLayouts"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.ProbalityPandCList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.GeometryList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.CoOrdinateGeoList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.TrigonometryList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.AreasPeriList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.CirclePropList"
@@ -163,31 +124,24 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.GeoFundList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.TrianglePropList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.VolSurfaceList"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.TrigonometryImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.AreasPeriImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.CirclePropImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.CoOrdinateGeoImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.DivLayout"
@@ -195,33 +149,26 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.GeoFundImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.GeometryImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.ProbabilityImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.TrianglePropImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.formulas.VolSurfaceImages"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
 
         <!-- _____________________ More About This App __________________ -->
         <activity
             android:name="com.droidacid.apticalc.more.AboutUs"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.droidacid.apticalc.more.Report"
-            android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
     </application>
 

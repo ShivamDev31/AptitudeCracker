@@ -2,8 +2,8 @@ package com.droidacid.apticalc.tys.model;
 
 public class ScoreEntry implements Comparable<ScoreEntry>{
 
-	int mScore;
-	String mName;
+	private final int mScore;
+	private final String mName;
 	
 	public ScoreEntry(String name, int score){
 		mName = name;

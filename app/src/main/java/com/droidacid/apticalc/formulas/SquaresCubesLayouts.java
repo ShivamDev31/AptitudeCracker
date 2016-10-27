@@ -6,6 +6,7 @@ import com.droidacid.apticalc.MyActionBar;
 import com.droidacid.apticalc.R;
 
 public class SquaresCubesLayouts extends MyActionBar {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

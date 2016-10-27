@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class ProbalityPandCList extends ListActivity {
-	ListView probList;
-	String[] f_prob;
+	private ListView probList;
+	private String[] f_prob;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

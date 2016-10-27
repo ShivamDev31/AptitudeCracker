@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -12,32 +12,17 @@ import android.view.MenuItem;
 import com.droidacid.apticalc.more.AboutUs;
 import com.droidacid.apticalc.more.Report;
 
-public class MyActionBar extends ActionBarActivity {
+public class MyActionBar extends AppCompatActivity {
+    private static final String FEEDBACK_URL = "http://www.droidacid.com/suggestions/";
+    private static final String LIKE_US = "http://www.facebook.com/AptitudeCrackerApp/";
 
+    private ActionBar actionBar;
 
-    ActionBar actionBar;
-
-    String urlFeedback = "http://www.droidacid.com/suggestions/";
-    String likeUs = "http://www.facebook.com/AptitudeCrackerApp/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         actionBar = getSupportActionBar();
-
-        /*try {
-            ViewConfiguration config = ViewConfiguration.get(this);
-            Field menuKeyField = ViewConfiguration.class
-                    .getDeclaredField("sHasPermanentMenuKey");
-
-            if (menuKeyField != null) {
-                menuKeyField.setAccessible(true);
-                menuKeyField.setBoolean(config, false);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
     }
 
     public void showActionBar() {
@@ -49,17 +34,11 @@ public class MyActionBar extends ActionBarActivity {
     }
 
     public ActionBar actionBar() {
-        // actionBar.setCustomView(R.layout.action_bar);
-        // actionBar.setDisplayShowTitleEnabled(false);
-        // actionBar.setDisplayShowCustomEnabled(true);
-        // actionBar.setDisplayShowHomeEnabled(false);
         return actionBar;
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
@@ -74,7 +53,6 @@ public class MyActionBar extends ActionBarActivity {
                     Intent rate = new Intent(Intent.ACTION_VIEW);
                     rate.setData(Uri.parse("market://details?id="
                             + this.getPackageName()));
-                    // rate.setFlags(Intent.);
                     startActivity(rate);
                 } catch (android.content.ActivityNotFoundException e) {
                     Intent rate = new Intent(Intent.ACTION_VIEW);
@@ -92,12 +70,12 @@ public class MyActionBar extends ActionBarActivity {
                 break;
             case R.id.feedback:
                 Intent feedback = new Intent(android.content.Intent.ACTION_VIEW);
-                feedback.setData(Uri.parse(urlFeedback));
+                feedback.setData(Uri.parse(FEEDBACK_URL));
                 startActivity(feedback);
                 break;
             case R.id.facebook:
                 Intent likeus = new Intent(android.content.Intent.ACTION_VIEW);
-                likeus.setData(Uri.parse(likeUs));
+                likeus.setData(Uri.parse(LIKE_US));
                 startActivity(likeus);
                 break;
             case R.id.about:

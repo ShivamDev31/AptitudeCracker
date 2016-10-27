@@ -12,77 +12,78 @@ import com.droidacid.apticalc.MyActionBar;
 import com.droidacid.apticalc.R;
 
 public class OneDifficulty extends MyActionBar implements OnClickListener,
-		OnCheckedChangeListener {
+        OnCheckedChangeListener {
 
-	private final static int EASY = 0;
-	private final static int MEDIUM = 1;
-	private final static int HARD = 2;
+    private final static int EASY = 0;
+    private final static int MEDIUM = 1;
+    private final static int HARD = 2;
 
-	int mDifficultyType = EASY;
+    int mDifficultyType = EASY;
 
-	final static String tag = "Test Your Skills";
+    final static String tag = "Test Your Skills";
 
-	RadioGroup rgDiffLevel;
-	Button bContinue, bHighScores;
+    private RadioGroup rgDiffLevel;
+    private Button bContinue;
+    private Button bHighScores;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		actionBar();
-		setContentView(R.layout.tys_one_dificulty);
-        
-		initialize();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        actionBar();
+        setContentView(R.layout.tys_one_dificulty);
 
-	}
+        initialize();
 
-	private void initialize() {
+    }
 
-		rgDiffLevel = (RadioGroup) findViewById(R.id.rg_tys_DiffLevel);
-		bContinue = (Button) findViewById(R.id.b_tys_Continue);
-		bHighScores = (Button) findViewById(R.id.b_tys_HighScores);
+    private void initialize() {
 
-		rgDiffLevel.setOnCheckedChangeListener(this);
-		bContinue.setOnClickListener(this);
-		bHighScores.setOnClickListener(this);
-	}
+        rgDiffLevel = (RadioGroup) findViewById(R.id.rg_tys_DiffLevel);
+        bContinue = (Button) findViewById(R.id.b_tys_Continue);
+        bHighScores = (Button) findViewById(R.id.b_tys_HighScores);
 
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
+        rgDiffLevel.setOnCheckedChangeListener(this);
+        bContinue.setOnClickListener(this);
+        bHighScores.setOnClickListener(this);
+    }
 
-		case R.id.b_tys_Continue:
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
 
-            //displayInterstitialAd();
-			// Log.d(tag, "Inside On Click Continue button");
-			Bundle basket = new Bundle();
-			basket.putInt("difficulty", mDifficultyType);
-			Intent Continue = new Intent(this, TwoLevel.class);
-			Continue.putExtras(basket);
-			startActivity(Continue);
-			break;
+            case R.id.b_tys_Continue:
 
-		case R.id.b_tys_HighScores:
-			Intent highScore = new Intent(this, HighScores.class);
-			startActivity(highScore);
-			break;
-		}
+                //displayInterstitialAd();
+                // Log.d(tag, "Inside On Click Continue button");
+                Bundle basket = new Bundle();
+                basket.putInt("difficulty", mDifficultyType);
+                Intent Continue = new Intent(this, TwoLevel.class);
+                Continue.putExtras(basket);
+                startActivity(Continue);
+                break;
 
-	}
+            case R.id.b_tys_HighScores:
+                Intent highScore = new Intent(this, HighScores.class);
+                startActivity(highScore);
+                break;
+        }
 
-	@Override
-	public void onCheckedChanged(RadioGroup group, int checkedId) {
+    }
 
-		switch (checkedId) {
-		case R.id.rb_tys_Easy:
-			mDifficultyType = EASY;
-			break;
-		case R.id.rb_tys_Medium:
-			mDifficultyType = MEDIUM;
-			break;
-		case R.id.rb_tys_Hard:
-			mDifficultyType = HARD;
-			break;
-		}
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-	}
+        switch (checkedId) {
+            case R.id.rb_tys_Easy:
+                mDifficultyType = EASY;
+                break;
+            case R.id.rb_tys_Medium:
+                mDifficultyType = MEDIUM;
+                break;
+            case R.id.rb_tys_Hard:
+                mDifficultyType = HARD;
+                break;
+        }
+
+    }
 }

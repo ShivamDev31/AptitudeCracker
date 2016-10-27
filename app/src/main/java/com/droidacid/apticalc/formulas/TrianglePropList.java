@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class TrianglePropList extends ListActivity {
-	ListView probList;
-	String[] f_tri_prop;
+	private ListView probList;
+	private String[] f_tri_prop;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

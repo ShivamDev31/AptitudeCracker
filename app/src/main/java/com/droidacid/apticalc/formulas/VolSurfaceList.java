@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class VolSurfaceList extends ListActivity {
-	ListView probList;
-	String[] f_vol_sur;
+	private ListView probList;
+	private String[] f_vol_sur;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

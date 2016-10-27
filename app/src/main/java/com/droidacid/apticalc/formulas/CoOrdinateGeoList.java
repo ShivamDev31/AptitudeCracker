@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class CoOrdinateGeoList extends ListActivity {
-	ListView probList;
-	String[] f_co_ord_geo;
+	private ListView probList;
+	private String[] f_co_ord_geo;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

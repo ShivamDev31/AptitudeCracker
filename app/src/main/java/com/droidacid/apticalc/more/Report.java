@@ -13,9 +13,16 @@ import com.droidacid.apticalc.R;
 
 public class Report extends MyActionBar implements OnClickListener {
 
-	EditText etName, etSubject, etLocation, etBody;
-	String name, subject, location, body, version;
-	Button bSendMail;
+	private EditText etName;
+	private EditText etSubject;
+	private EditText etLocation;
+	private EditText  etBody;
+	private String name;
+	private String subject;
+	private String location;
+	private String body;
+	private String version;
+	private Button bSendMail;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

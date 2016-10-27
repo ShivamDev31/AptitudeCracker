@@ -10,8 +10,13 @@ import com.droidacid.apticalc.R;
 
 public class AptiCalc extends MyActionBar implements View.OnClickListener {
 
-    Button bnumsys, bpercent, btimenwork, btimedist, binterest, blcmhcf,
-            bareavolume, bfactorial;
+    private Button bnumsys;
+    private Button bpercent;
+    private Button btimenwork;
+    private Button btimedist;
+    private Button binterest;
+    private Button blcmhcf;
+    private Button bfactorial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +33,6 @@ public class AptiCalc extends MyActionBar implements View.OnClickListener {
         btimedist = (Button) findViewById(R.id.b_apti_timendist);
         binterest = (Button) findViewById(R.id.b_apti_interest);
         blcmhcf = (Button) findViewById(R.id.b_apti_blcmhcf);
-        //bareavolume = (Button) findViewById(R.id.b_apti_geometry);
         bfactorial = (Button) findViewById(R.id.b_apti_factorial);
 
         bnumsys.setOnClickListener(this);
@@ -37,15 +41,12 @@ public class AptiCalc extends MyActionBar implements View.OnClickListener {
         btimedist.setOnClickListener(this);
         binterest.setOnClickListener(this);
         blcmhcf.setOnClickListener(this);
-        //bareavolume.setOnClickListener(this);
         bfactorial.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View button) {
-        // Switch case for buttons
-
         switch (button.getId()) {
             case R.id.b_apti_numsys:
                 Intent NumSys = new Intent(this, AptiNumSys.class);
@@ -71,16 +72,10 @@ public class AptiCalc extends MyActionBar implements View.OnClickListener {
                 Intent LCMHCF = new Intent(this, AptiLcmHcf.class);
                 startActivity(LCMHCF);
                 break;
-            /*case R.id.b_apti_geometry:
-                Intent AreaVolume = new Intent(this, AptiGeometry.class);
-                startActivity(AreaVolume);
-                break;*/
             case R.id.b_apti_factorial:
                 Intent factorial = new Intent(this, AptiFactorial.class);
                 startActivity(factorial);
                 break;
-
         }
-
     }
 }

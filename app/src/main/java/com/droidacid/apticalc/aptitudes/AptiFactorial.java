@@ -13,11 +13,12 @@ import com.droidacid.apticalc.R;
 
 public class AptiFactorial extends MyActionBar implements
         android.view.View.OnClickListener {
-    EditText number;
-    TextView answer;
-    Button calculate, bClear;
-    double factorial = 1;
-    int num = 0;
+    private EditText number;
+    private TextView answer;
+    private Button bCalculate;
+    private Button bClear;
+    private double factorial = 1;
+    private int num = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +32,10 @@ public class AptiFactorial extends MyActionBar implements
     private void initialize() {
         number = (EditText) findViewById(R.id.et_apti_number);
         answer = (TextView) findViewById(R.id.tv_apti_answer);
-        calculate = (Button) findViewById(R.id.b_fact_calc);
+        bCalculate = (Button) findViewById(R.id.b_fact_calc);
         bClear = (Button) findViewById(R.id.bClear);
 
-        calculate.setOnClickListener(this);
+        bCalculate.setOnClickListener(this);
         bClear.setOnClickListener(this);
     }
 
@@ -42,14 +43,12 @@ public class AptiFactorial extends MyActionBar implements
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.b_fact_calc:
-
                 calcFactorial();
                 break;
             case R.id.bClear:
                 number.setText("");
                 answer.setText("");
         }
-
     }
 
     private void calcFactorial() {
@@ -57,10 +56,6 @@ public class AptiFactorial extends MyActionBar implements
             num = Integer.parseInt(number.getText().toString());
 
             if (num < 25) {
-                /*for (int i = num; i <= 1; i--) {
-					factorial *= i;
-				}*/
-
                 for (int c = 1; c <= num; c++)
                     factorial = factorial * c;
                 answer.setText("Factorial of " + num + " is : " + factorial);

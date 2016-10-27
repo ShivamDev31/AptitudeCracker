@@ -17,12 +17,11 @@ import com.droidacid.apticalc.R;
 public class AptiTimeDist extends MyActionBar implements OnClickListener,
         OnCheckedChangeListener {
 
-    Button bCalc, bClear;
-    EditText etTime, etDistance, etSpeed;
-    TextView tvResult;
-    RadioGroup rgTimeDist;
-    String tag = "Time Speed Distance";
-    Double time, speed, dist;
+    private EditText etTime;
+    private EditText etDistance;
+    private EditText etSpeed;
+    private TextView tvResult;
+    private RadioGroup rgTimeDist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +32,14 @@ public class AptiTimeDist extends MyActionBar implements OnClickListener,
     }
 
     private void initialize() {
-        bCalc = (Button) findViewById(R.id.b_apti_CalcTDS);
+        Button bCalc = (Button) findViewById(R.id.b_apti_CalcTDS);
         etTime = (EditText) findViewById(R.id.et_apti_Time);
         etSpeed = (EditText) findViewById(R.id.et_apti_Speed);
         etDistance = (EditText) findViewById(R.id.et_apti_distance);
         tvResult = (TextView) findViewById(R.id.tv_apti_Result);
         rgTimeDist = (RadioGroup) findViewById(R.id.rg_apti_TimeDist);
         rgTimeDist.setOnCheckedChangeListener(this);
-        bClear = (Button) findViewById(R.id.bClear);
+        Button bClear = (Button) findViewById(R.id.bClear);
         bClear.setOnClickListener(this);
         bCalc.setOnClickListener(this);
     }
@@ -53,6 +52,8 @@ public class AptiTimeDist extends MyActionBar implements OnClickListener,
 
                 switch (selectedRB) {
                     case R.id.rb_apti_Time:
+                        Double speed;
+                        Double dist;
                         try {
                             speed = Double.parseDouble(etSpeed.getText().toString());
                             dist = Double.parseDouble(etDistance.getText().toString());
@@ -63,6 +64,7 @@ public class AptiTimeDist extends MyActionBar implements OnClickListener,
                         break;
 
                     case R.id.rb_apti_Speed:
+                        Double time;
                         try {
                             time = Double.parseDouble(etTime.getText().toString());
                             dist = Double.parseDouble(etDistance.getText().toString());

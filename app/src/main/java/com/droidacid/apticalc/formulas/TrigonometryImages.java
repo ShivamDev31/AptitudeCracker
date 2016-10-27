@@ -7,7 +7,7 @@ import com.droidacid.apticalc.MyActionBar;
 import com.droidacid.apticalc.R;
 
 public class TrigonometryImages extends MyActionBar {
-	ImageView ivFor;
+	private ImageView ivFor;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

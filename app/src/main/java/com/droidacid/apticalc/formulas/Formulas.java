@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class Formulas extends ListActivity {
-	ListView forList;
-	String[] f_main;
+	private ListView forList;
+	private String[] f_main;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

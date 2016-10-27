@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class CirclePropList extends ListActivity {
-	ListView probList;
-	String[] f_cir_prop;
+	private ListView probList;
+	private String[] f_cir_prop;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

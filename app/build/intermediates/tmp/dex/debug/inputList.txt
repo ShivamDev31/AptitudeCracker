@@ -1,6 +1,0 @@
-A:\AndroidStudio\AptitudeCracker\app\build\intermediates\classes\debug
-A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-f5f5e63a1cd076f070aa416b39b1d3841767fcb5.jar
-A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-166688ff986ea656476f6b78824c726fdbad4d0e.jar
-A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\classes-9cf0a53edd20ad12bb519fa0f0d19be55f85388d.jar
-A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\classes-549448745a96eeb35e2be6d9fe7c836c95c485f4.jar
-A:\AndroidStudio\AptitudeCracker\app\build\intermediates\pre-dexed\debug\classes-bcffc20e6ae2252df06334bea443ba9b779a596b.jar

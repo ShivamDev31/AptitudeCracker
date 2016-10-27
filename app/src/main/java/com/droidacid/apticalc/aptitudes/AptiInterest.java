@@ -15,10 +15,14 @@ import com.droidacid.apticalc.R;
  * Created by ShivamD on 5/19/13.
  */
 public class AptiInterest extends MyActionBar implements View.OnClickListener {
-	String tag = "Simple Interest";
-	EditText etPrincipal, etRate, etTime;
-	Button calcSI, calcCI, bClear;;
-	TextView tvAnswer;
+	private static final String TAG = AptiInterest.class.getSimpleName();
+	private EditText etPrincipal;
+	private EditText etRate;
+	private EditText etTime;
+	private Button calcSI;
+	private Button calcCI;
+	private Button bClear;;
+	private TextView tvAnswer;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +30,6 @@ public class AptiInterest extends MyActionBar implements View.OnClickListener {
 		setContentView(R.layout.aptiinterest);
 		actionBar();
 		initialize();
-
 	}
 
 	private void initialize() {

@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class SquaresCubesFractionsList extends ListActivity {
-	ListView forList;
-	String[] f_squares;
+	private ListView forList;
+	private String[] f_squares;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

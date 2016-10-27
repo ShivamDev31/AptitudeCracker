@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class GeoFundList extends ListActivity {
-	ListView probList;
-	String[] f_fund_geo;
+	private ListView probList;
+	private String[] f_fund_geo;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

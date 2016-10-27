@@ -108,7 +108,7 @@ ADDED from AndroidManifest.xml:58:9
 		ADDED from AndroidManifest.xml:60:13
 	android:name
 		ADDED from AndroidManifest.xml:59:13
-activity#com.droidacid.apticalc.tipsandtricks.TipsAndTricksShowTextView
+activity#com.droidacid.apticalc.tipsandtricks.TipsAndTricksDetailedView
 ADDED from AndroidManifest.xml:62:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:65:13

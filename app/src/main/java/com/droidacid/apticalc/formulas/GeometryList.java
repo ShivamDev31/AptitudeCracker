@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class GeometryList extends ListActivity {
-	ListView probList;
-	String[] f_geo;
+	private ListView probList;
+	private String[] f_geo;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

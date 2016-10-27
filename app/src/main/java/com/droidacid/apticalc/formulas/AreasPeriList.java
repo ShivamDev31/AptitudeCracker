@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class AreasPeriList extends ListActivity {
-	ListView probList;
-	String[] f_area_peri;
+	private ListView probList;
+	private String[] f_area_peri;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

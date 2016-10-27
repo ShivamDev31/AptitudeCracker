@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
@@ -18,16 +17,16 @@ import com.droidacid.apticalc.R;
 public class AptiTimeNWork extends MyActionBar implements OnClickListener,
         OnCheckedChangeListener {
 
-    TextView tvOutput;
-    RadioGroup rgSelect;
-    EditText num1, num2, num3;
-    Button calculate, bClear;
-    RadioButton rbTtwo, rbThree;
-    Double numb1, numb2, numb3;
+    private TextView tvOutput;
+    private RadioGroup rgSelect;
+    private EditText num1;
+    private EditText num2;
+    private EditText num3;
+    private Double numb1;
+    private Double numb2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aptitimenwork);
         actionBar();
@@ -43,8 +42,8 @@ public class AptiTimeNWork extends MyActionBar implements OnClickListener,
         num2 = (EditText) findViewById(R.id.et_apti_secondperson);
         num3 = (EditText) findViewById(R.id.et_apti_thirdperson);
 
-        calculate = (Button) findViewById(R.id.b_apti_calcWD);
-        bClear = (Button) findViewById(R.id.bClear);
+        Button calculate = (Button) findViewById(R.id.b_apti_calcWD);
+        Button bClear = (Button) findViewById(R.id.bClear);
         bClear.setOnClickListener(this);
         calculate.setOnClickListener(this);
         rgSelect.setOnCheckedChangeListener(this);
@@ -72,7 +71,7 @@ public class AptiTimeNWork extends MyActionBar implements OnClickListener,
                     case R.id.rb_apti_threeperson:
 
                         try {
-                            numb3 = Double.parseDouble(num3.getText().toString());
+                            Double numb3 = Double.parseDouble(num3.getText().toString());
                             tvOutput.setText("Time taken = " + Double.toString(100 / (100 / numb1 + 100 / numb2 + 100 / numb3)) + " days");
                         } catch (NumberFormatException e) {
                             showDialog();

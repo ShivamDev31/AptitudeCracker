@@ -11,8 +11,8 @@ import android.widget.ListView;
 import com.droidacid.apticalc.R;
 
 public class TrigonometryList extends ListActivity {
-	ListView probList;
-	String[] f_trigono;
+	private ListView probList;
+	private String[] f_trigono;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

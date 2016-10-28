@@ -1,13 +1,19 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+
+def config = rootProject.ext.android;
+def libs = rootProject.ext.libs;
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "23.0.3"
-
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
     defaultConfig {
-        applicationId "com.droidacid.apticalc"
-        minSdkVersion 9
-        targetSdkVersion 24
+        applicationId config.applicationId
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
     }
 
     buildTypes {
@@ -16,10 +22,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.google.android.gms:play-services:9.2.0'
+
+    // Google stuff
+    compile "com.android.support:appcompat-v7:${libs.support}"
+    compile "com.android.support:design:${libs.support}"
+    compile "com.google.android.gms:play-services:${libs.playServices}"
+
+    // Butterknife
+    compile "com.jakewharton:butterknife:${libs.butterknife}"
+    apt "com.jakewharton:butterknife-compiler:${libs.butterknife}"
 }
+//apply plugin: 'com.google.gms.google-services'

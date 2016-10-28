@@ -1,6 +1,5 @@
 package com.droidacid.apticalc.tys;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -9,8 +8,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.droidacid.apticalc.R;
+import com.droidacid.apticalc.common.BaseActivity;
 
-public class ThreeCounter extends Activity {
+public class ThreeCounter extends BaseActivity {
 
     final static String tag = "Counter Class";
     TextView tvNumberOfQues, tvDifficultyType, tvQuestionsType, tvCounter;
@@ -31,13 +31,16 @@ public class ThreeCounter extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //actionBar();
-        setContentView(R.layout.tys_three_counter);
         initialize();
         counterTimer();
         difficulty();
         questionType();
 
+    }
+
+    @Override
+    public int getLayout() {
+        return R.layout.tys_three_counter;
     }
 
     private void initialize() {

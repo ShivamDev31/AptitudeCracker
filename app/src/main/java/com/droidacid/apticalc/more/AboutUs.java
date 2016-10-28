@@ -1,16 +1,12 @@
 package com.droidacid.apticalc.more;
 
-import android.os.Bundle;
-
-import com.droidacid.apticalc.MyActionBar;
 import com.droidacid.apticalc.R;
+import com.droidacid.apticalc.common.BaseActivity;
 
-public class AboutUs extends MyActionBar {
+public class AboutUs extends BaseActivity {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		showActionBar();
-		setContentView(R.layout.more_about_us);
+	public int getLayout() {
+		return R.layout.more_about_us;
 	}
 }

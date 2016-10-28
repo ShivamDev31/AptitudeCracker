@@ -16,15 +16,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.droidacid.apticalc.MyActionBar;
 import com.droidacid.apticalc.R;
+import com.droidacid.apticalc.common.BaseActivity;
 import com.droidacid.apticalc.tys.model.ScoreEntry;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class TYSScores extends MyActionBar implements OnClickListener {
+public class TYSScores extends BaseActivity implements OnClickListener {
 
     static final String tag = "Inside CalcScore";
 
@@ -44,13 +44,15 @@ public class TYSScores extends MyActionBar implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        actionBar();
-        setContentView(R.layout.tys_scores);
         initialize();
     }
 
-    private void initialize() {
+    @Override
+    public int getLayout() {
+        return R.layout.tys_scores;
+    }
 
+    private void initialize() {
         rightAnswers = (TextView) findViewById(R.id.tv_tys_RightAnswers);
         wrongAnswers = (TextView) findViewById(R.id.tv_tys_WrongAnswers);
         totalScore = (TextView) findViewById(R.id.tv_tys_TotalScore);
@@ -65,10 +67,10 @@ public class TYSScores extends MyActionBar implements OnClickListener {
         wrongAns = getScore.getInt("wronganswers");
         score = getScore.getInt("score");
 
-        if (isHighScore(score)) figureOutName(score);
-
+        if (isHighScore(score)) {
+            figureOutName(score);
+        }
         getValuesToString();
-
         setValuesToTextViews();
     }
 

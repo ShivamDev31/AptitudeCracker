@@ -5,18 +5,16 @@ import android.text.Html;
 import android.text.Spanned;
 import android.widget.TextView;
 
-import com.droidacid.apticalc.MyActionBar;
+import com.droidacid.apticalc.common.BaseActivity;
 import com.droidacid.apticalc.R;
 
-public class TipsAndTricksDetailedView extends MyActionBar {
+public class TipsAndTricksDetailedView extends BaseActivity {
 
     private TextView tvTips;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        actionBar();
-        setContentView(R.layout.tat_text_detail);
 
         tvTips = (TextView) findViewById(R.id.tv_tat_detailed);
 
@@ -26,5 +24,10 @@ public class TipsAndTricksDetailedView extends MyActionBar {
         String parsedHtml = HtmlAssetParser.parseHtml(this, mFile);
         Spanned inHtmlCC = Html.fromHtml(parsedHtml);
         tvTips.setText(inHtmlCC);
+    }
+
+    @Override
+    public int getLayout() {
+        return R.layout.tat_text_detail;
     }
 }

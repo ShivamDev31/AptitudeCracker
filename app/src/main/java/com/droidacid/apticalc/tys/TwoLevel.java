@@ -1,6 +1,5 @@
 package com.droidacid.apticalc.tys;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,8 +7,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.droidacid.apticalc.R;
+import com.droidacid.apticalc.common.BaseActivity;
 
-public class TwoLevel extends Activity implements OnClickListener {
+public class TwoLevel extends BaseActivity implements OnClickListener {
 
     final static String tag = "TYSMain1 Activity";
     private Button bAdd;
@@ -30,10 +30,12 @@ public class TwoLevel extends Activity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //actionBar();
-        setContentView(R.layout.tys_two_level);
-
         initialize();
+    }
+
+    @Override
+    public int getLayout() {
+        return R.layout.tys_two_level;
     }
 
     private void initialize() {

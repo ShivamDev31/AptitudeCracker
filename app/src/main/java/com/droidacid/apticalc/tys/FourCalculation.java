@@ -1,6 +1,5 @@
 package com.droidacid.apticalc.tys;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,12 +13,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.droidacid.apticalc.R;
+import com.droidacid.apticalc.common.BaseActivity;
 import com.droidacid.apticalc.tys.model.Question;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class FourCalculation extends Activity implements OnClickListener {
+public class FourCalculation extends BaseActivity implements OnClickListener {
     private static final String TAG = "CalculationActivity";
     private final static int EASY = 0;
     private final static int MEDIUM = 1;
@@ -45,10 +45,14 @@ public class FourCalculation extends Activity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tys_four_calculate);
         initialize();
         questions();
         startTimer();
+    }
+
+    @Override
+    public int getLayout() {
+        return R.layout.tys_four_calculate;
     }
 
     private void initialize() {

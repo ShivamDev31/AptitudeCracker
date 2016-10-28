@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-import com.droidacid.apticalc.MyActionBar;
+import com.droidacid.apticalc.common.BaseActivity;
 import com.droidacid.apticalc.R;
 
-public class OneDifficulty extends MyActionBar implements OnClickListener,
+public class OneDifficulty extends BaseActivity implements OnClickListener,
         OnCheckedChangeListener {
 
     private final static int EASY = 0;
@@ -29,11 +29,12 @@ public class OneDifficulty extends MyActionBar implements OnClickListener,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        actionBar();
-        setContentView(R.layout.tys_one_dificulty);
-
         initialize();
+    }
 
+    @Override
+    public int getLayout() {
+        return R.layout.tys_one_dificulty;
     }
 
     private void initialize() {

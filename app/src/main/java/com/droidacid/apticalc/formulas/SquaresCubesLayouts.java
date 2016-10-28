@@ -2,18 +2,22 @@ package com.droidacid.apticalc.formulas;
 
 import android.os.Bundle;
 
-import com.droidacid.apticalc.MyActionBar;
+import com.droidacid.apticalc.common.BaseActivity;
 import com.droidacid.apticalc.R;
 
-public class SquaresCubesLayouts extends MyActionBar {
+public class SquaresCubesLayouts extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		actionBar();
 		Bundle getPos = getIntent().getExtras();
 		int pos = getPos.getInt("position");
 		setLayout(pos);
+	}
+
+	@Override
+	public int getLayout() {
+		return 0;
 	}
 
 	private void setLayout(int pos) {
